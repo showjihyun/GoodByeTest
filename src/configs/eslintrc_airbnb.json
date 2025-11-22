@@ -1,0 +1,13 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

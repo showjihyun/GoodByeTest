@@ -1,0 +1,123 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Outlines 8 0 R /PageMode /UseNone /Pages 15 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author () /CreationDate (D:20251123013839+09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20251123013839+09'00') /Producer (xhtml2pdf <https://github.com/xhtml2pdf/xhtml2pdf/>) 
+  /Subject () /Title (Code Review Report) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 3 /First 9 0 R /Last 9 0 R /Type /Outlines
+>>
+endobj
+9 0 obj
+<<
+/Count -3 /Dest [ 5 0 R /Fit ] /First 10 0 R /Last 14 0 R /Parent 8 0 R /Title (GitLab Code Review Agent Report)
+>>
+endobj
+10 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 11 0 R /Parent 9 0 R /Title (1. Static Analysis)
+>>
+endobj
+11 0 obj
+<<
+/Count -2 /Dest [ 5 0 R /Fit ] /First 12 0 R /Last 13 0 R /Next 14 0 R /Parent 9 0 R 
+  /Prev 10 0 R /Title (2. Dynamic Analysis \(DB & Tests\))
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Database Checks)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Parent 11 0 R /Prev 12 0 R /Title (Test Execution)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Parent 9 0 R /Prev 11 0 R /Title (3. AI Code Review)
+>>
+endobj
+15 0 obj
+<<
+/Count 1 /Kids [ 5 0 R ] /Type /Pages
+>>
+endobj
+16 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1672
+>>
+stream
+Gb"/(h/h:0&:`#5Ytm<3)2(1j.;q$gS_UV9Rdc[\(R1Li^cCF%:&k&o)=/2ZYXh?RRgBB<d!kn9Ik,dj(f:-?q<M]$n88NfEs@T@n-57*&r%LdCj>U@d:[j4V)6dla?Tq@lB%B`1XrN81[$C)+XRnlCNqg*_r\*(V?u:7$5cP.,>jnLjZI\33A='Y%[@,]=NHaa5e%M%KL"<C8u>shofgYb6snk/)-aVXpT]-shH)e^nAAOpB#cU<Kji_Es.!RHS-m.o&7kn]C*6\obp?W/5@R#(_O1Kq@1%l"7)VIj0S-:$qI\rS'>a35&a0:q#m2&#]P?U>OVW*TeI/EE&Jp%QS+__Nb]sGc?KQK'6DX_a.O9m[ZI&<n,RLGhfj%<52adm#:H0Rpfgbp&dsUu[;EIF5><C!cU48?(d8e+_Xp(G\RGCQ>%e,#PX^*Zl#dg%*]IX]R;X:#W+euou:*rT"^L4jl/coO=$4gDY;@tMT>8855iSps`?;_@b+St"HKqUm=HX8,s;.aSNJlAg5N-2W1b"dUR&a$2Z[aYQ=BBd66%#lc,Yi#$Hqqe3t"=)6em/)1*:o\gUn&pr`^c?G80^)eJSb:T7Woi3]WP4m%W!IFHTC'a^4se)U@L_;?BXXR7i9_b-_A;LtR,H/Rb]Q^eUl-eHbAkNmc?)1#hCP*XcK"`?XFCG['\]s>U*s/Y.'gL+am0\,:^;P*+\<eV#bC6#G[@Y>J"]%:0E[&dQg.3nL_1*aBq?*)0:HjK2rVDc_2Gr0?qaM!nrb`_\\VId_Ppfi!pBb.QEWeb//!mTm%Jjq+tW@m-I1YnB)f)=.88/Y_@@>@Y)ZuKJIdrTdPOC31?X@8W5,rRI(s)CD?gW%95=#8F25:#p"EO8&G]It->?E>fFS=tn?4D#(&5DVW4d2Zk38g+NT++82S+s\UL`)d5GIDu`-+q?=dCCuM+rgGo:;/M%G1bU3DoL*V<!^i(M6pPH5@Zh?-+u+d2`0n&btXAm3oAFB0M2b^-(fodS"j:Q68Uirb)L7pML]g-<tfXX94)#Za23CYh@4k=5[qTD.Z;+*Q*$#2n4CQlm!ci3BDuYo7nS3?QYJE,385@`c:=nHBp/7FJF\54fB#J!XIuT\#!n)\5fjb\u&`D?LPZ,SWoSRN/sO0`gVl"cWWQrn#B4.76IYNjAueT:m>)M#']]<lK'32<iQK9"B'Fr)61>#2H_WO[csn#qsib+Ti<L04KPXKGgYU2VpHk<RVf-@GYuuSUf8cgRVf.*GYq!&%4nWZPA]!PaR-i@Zh[LYHJ,6Qmm'^UP<t3(=EkJ8JXe%tV%WI+:m!Aj+_l5o_AK"AEN\sR%jEuaro5Pu<_ak.:>(+%J&'FVZha:!n%jY_"/=G6hmYq+=kUI4UV;gP%tG<oU=Y(KSY8M[U:H!,J*cBgpQ:;/$8\mq=a^D3hm7`'!)keu;8JetDj#3Wa3V.-RfEW[*+(XIN_DG0@7T4]3,*1[94/UIg/I.BD/a8#`p^,fZX[@8gea`SB(/lQp2(SaPF@\<+*<AR)&-_,^N"E)!kjNWn%RZSUsA_`.AI5,DY2Pa2<X=aQ>#k`_4;$Wgl%LbcA:OP(p9]A5Jmc$nmnik-u+$D\%R!=mIlB0hsqTTldj*eo^2MM"9rR\+-17GZQt0J(;"ERr:@Jp%S-O"pCYp+~>endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000448 00000 n 
+0000000653 00000 n 
+0000000738 00000 n 
+0000001008 00000 n 
+0000001079 00000 n 
+0000001213 00000 n 
+0000001311 00000 n 
+0000001478 00000 n 
+0000001574 00000 n 
+0000001669 00000 n 
+0000001766 00000 n 
+0000001826 00000 n 
+trailer
+<<
+/ID 
+[<ec2c95838a16a38bc2bff5ba5982899e><ec2c95838a16a38bc2bff5ba5982899e>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 7 0 R
+/Root 6 0 R
+/Size 17
+>>
+startxref
+3590
+%%EOF

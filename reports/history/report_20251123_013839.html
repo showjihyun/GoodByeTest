@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Review Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        .summary { background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; }
+        .section { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .passed { color: green; font-weight: bold; }
+        .failed { color: red; font-weight: bold; }
+        .skipped { color: orange; font-weight: bold; }
+        .code-block { background-color: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>GitLab Code Review Agent Report</h1>
+    
+    <div class="summary">
+        <p><strong>Project ID:</strong> None</p>
+        <p><strong>MR IID:</strong> None</p>
+        <p><strong>Date:</strong> 2025-11-23 01:38:39</p>
+        <p><strong>Overall Status:</strong> 
+            <span class="passed">
+                PASSED
+            </span>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>1. Static Analysis</h2>
+        
+        <table>
+            <tr>
+                <th>File</th>
+                <th>Tool</th>
+                <th>Status</th>
+                <th>Errors</th>
+            </tr>
+            
+            <tr>
+                <td>src/main/java/com/example/Controller.java</td>
+                <td>java</td>
+                <td class="failed">FAILED</td>
+                <td>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td>src/main/java/com/example/Controller.java</td>
+                <td>secret-scan</td>
+                <td class="failed">FAILED</td>
+                <td>
+                    
+                    <div>- Potential Secret detected (API Key or Password).</div>
+                    
+                </td>
+            </tr>
+            
+        </table>
+        
+    </div>
+
+    <div class="section">
+        <h2>2. Dynamic Analysis (DB & Tests)</h2>
+        <h3>Database Checks</h3>
+        
+        <p>No DB checks performed.</p>
+        
+
+        <h3>Test Execution</h3>
+        <p><strong>Status:</strong> passed</p>
+        <p><strong>Details:</strong> </p>
+        
+    </div>
+
+    <div class="section">
+        <h2>3. AI Code Review</h2>
+        
+        
+        <div class="code-block">
+            **src/main/java/com/example/Controller.java**: AI Review (Mock): Provider not initialized.
+        </div>
+        
+        
+    </div>
+</body>
+</html>

@@ -54,6 +54,7 @@ code_review:
 | `--mr-iid` | `CI_MERGE_REQUEST_IID` | Merge Request IID |
 | `--llm-provider` | `LLM_PROVIDER` | AI Provider (openai, claude, gemini, ollama) |
 | `--compliance` | - | Compliance Standard (e.g., `korea_public`) |
+| `--convention` | - | Coding Convention (`google`, `airbnb`, `pep8`, `sun`) |
 | `--skip-tests` | - | Skip test execution stage |
 | `--local-files` | - | List of files to scan locally |
 

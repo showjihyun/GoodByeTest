@@ -21,6 +21,7 @@ The GitLab Code Review Agent is a comprehensive tool designed to automate the co
 
 -   **🤖 AI-Powered Reviews**: Integrates with OpenAI, Claude, Gemini, or Ollama to provide intelligent code feedback.
 -   **🛡️ Security First**: Built-in secret scanning and compliance checks (e.g., Korea Public Sector standards).
+-   **📏 Global Standards**: Enforce Google, Airbnb, and PEP8 coding conventions with a single flag.
 -   **⚡ High Performance**: Parallel execution of static analysis, DB checks, and tests.
 -   **📊 Rich Reporting**: Generates detailed HTML & PDF reports with history tracking.
 -   **🌍 Polyglot**: Native support for Java, Python, React, and Node.js.

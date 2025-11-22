@@ -30,3 +30,12 @@ The review process consists of parallel stages:
 -   **Rich Formats**: Generates HTML and PDF reports.
 -   **History Tracking**: Archives every review run with timestamps for audit trails.
 -   **Integration**: Posts summaries directly to GitLab Merge Requests and sends Slack notifications.
+
+## 5. Global Coding Conventions
+Enforce industry-standard coding styles across your projects.
+-   **Supported Standards**:
+    -   **Java**: Google Style, Sun Style.
+    -   **Python**: Google Style, PEP8.
+    -   **JavaScript**: Airbnb Style, Google Style.
+-   **Configuration**: Uses built-in config files (e.g., `google_checks.xml`, `pylintrc_google`) stored in `src/configs/`.
+-   **Usage**: simply pass `--convention [style]` to the agent.

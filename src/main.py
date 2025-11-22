@@ -31,6 +31,7 @@ def main():
     
     # Compliance Args
     parser.add_argument('--compliance', help='Compliance Standard (e.g., korea_public)', default=None)
+    parser.add_argument('--convention', help='Coding Convention (google, airbnb, pep8, sun)', default=None)
     
     # Advanced Args
     parser.add_argument('--slack-webhook', help='Slack Webhook URL', default=os.environ.get('SLACK_WEBHOOK_URL'))
@@ -107,7 +108,7 @@ def main():
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         # Define Tasks
-        future_static = executor.submit(run_static_analysis_task, analyzer, changed_files, args.compliance)
+        future_static = executor.submit(run_static_analysis_task, analyzer, changed_files, args.compliance, args.convention)
         future_db = executor.submit(run_db_checks_task, db_checker, changed_files)
         
         future_tests = None
@@ -180,12 +181,12 @@ def main():
 
     print("Review Complete.")
 
-def run_static_analysis_task(analyzer, files, compliance_standard):
+def run_static_analysis_task(analyzer, files, compliance_standard, convention=None):
     print("--- Task: Static Analysis ---")
     results = []
     for file in files:
         # Lint
-        res = analyzer.run_lint(file)
+        res = analyzer.run_lint(file, convention=convention)
         if res: results.append(res)
         
         # Compliance
