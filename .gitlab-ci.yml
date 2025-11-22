@@ -1,0 +1,21 @@
+stages:
+  - review
+
+variables:
+  AGENT_IMAGE: "python:3.9-slim" # Placeholder for the actual agent image
+
+code_review:
+  stage: review
+  image: $AGENT_IMAGE
+  script:
+    - echo "Starting Code Review Agent..."
+    - pip install -r requirements.txt # Assuming requirements are needed, or pre-baked in image
+    - python3 src/main.py
+  only:
+    - merge_requests
+  artifacts:
+    reports:
+      junit: report.xml
+    expose_as: 'Code Review Report'
+    paths:
+      - review_summary.md

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Review Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        .summary { background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; }
+        .section { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .passed { color: green; font-weight: bold; }
+        .failed { color: red; font-weight: bold; }
+        .skipped { color: orange; font-weight: bold; }
+        .code-block { background-color: #f4f4f4; padding: 10px; border-radius: 4px; font-family: monospace; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>GitLab Code Review Agent Report</h1>
+    
+    <div class="summary">
+        <p><strong>Project ID:</strong> {{ project_id }}</p>
+        <p><strong>MR IID:</strong> {{ mr_iid }}</p>
+        <p><strong>Date:</strong> {{ timestamp }}</p>
+        <p><strong>Overall Status:</strong> 
+            <span class="{{ 'passed' if test_execution.status == 'passed' else 'failed' }}">
+                {{ test_execution.status|upper }}
+            </span>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>1. Static Analysis</h2>
+        {% if static_analysis %}
+        <table>
+            <tr>
+                <th>File</th>
+                <th>Tool</th>
+                <th>Status</th>
+                <th>Errors</th>
+            </tr>
+            {% for result in static_analysis %}
+            <tr>
+                <td>{{ result.file }}</td>
+                <td>{{ result.tool }}</td>
+                <td class="{{ result.status }}">{{ result.status|upper }}</td>
+                <td>
+                    {% for error in result.errors %}
+                    <div>- {{ error }}</div>
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No static analysis issues found.</p>
+        {% endif %}
+    </div>
+
+    <div class="section">
+        <h2>2. Dynamic Analysis (DB & Tests)</h2>
+        <h3>Database Checks</h3>
+        {% if dynamic_analysis %}
+        <ul>
+        {% for result in dynamic_analysis %}
+            <li>{{ result.file }} - {{ result.type }}: {{ result.status }}</li>
+        {% endfor %}
+        </ul>
+        {% else %}
+        <p>No DB checks performed.</p>
+        {% endif %}
+
+        <h3>Test Execution</h3>
+        <p><strong>Status:</strong> {{ test_execution.status }}</p>
+        <p><strong>Details:</strong> {{ test_execution.details }}</p>
+        {% if test_execution.stats %}
+        <ul>
+            <li>Tests: {{ test_execution.stats.tests }}</li>
+            <li>Failures: {{ test_execution.stats.failures }}</li>
+            <li>Errors: {{ test_execution.stats.errors }}</li>
+        </ul>
+        {% endif %}
+    </div>
+
+    <div class="section">
+        <h2>3. AI Code Review</h2>
+        {% if ai_reviews %}
+        {% for review in ai_reviews %}
+        <div class="code-block">
+            {{ review }}
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No AI reviews generated.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

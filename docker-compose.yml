@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  webhook-server:
+    build: .
+    command: python src/webhook_server.py
+    ports:
+      - "5000:5000"
+    environment:
+      - GITLAB_TOKEN=${GITLAB_TOKEN}
+      - CI_PROJECT_ID=${CI_PROJECT_ID}
+      - CI_MERGE_REQUEST_IID=${CI_MERGE_REQUEST_IID}
+      - DB_CONNECTION_STRING=${DB_CONNECTION_STRING}
+      - LLM_PROVIDER=${LLM_PROVIDER}
+      - LLM_API_KEY=${LLM_API_KEY}
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+    volumes:
+      - ./src:/app/src
+      - ./report.json:/app/report.json
+
+  dashboard:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ../dashboard:/app
+      - ./report.json:/app/public/report.json
+    command: sh -c "npm install && npm run dev -- --host"
+    ports:
+      - "5173:5173"
+    depends_on:
+      - webhook-server

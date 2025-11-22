@@ -1,0 +1,16 @@
+requests
+python-gitlab
+openai
+junit-xml
+sqlalchemy
+pymysql
+psycopg2-binary
+anthropic
+google-generativeai
+flask
+autopep8
+pytest
+playwright
+detect-secrets
+jinja2
+xhtml2pdf
